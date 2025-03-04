@@ -1,15 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Xunit;
+using LeetCode.Problems.P2_AddTwoNumbers;
 
-namespace Bolay.LeetCode.Problems.Tests
+namespace LeetCode.Tests.P2_AddTwoNumbers
 {
     public class P2AddTwoNumbersTests
     {
-        private ListNode BuildListNode(int[] nums)
+        private ListNode? BuildListNode(int[] nums)
         {
-            ListNode result = null;
+            ListNode? result = null;
             foreach(var number in nums.Reverse())
             {
                 result = new ListNode(number, result);
@@ -41,7 +39,7 @@ namespace Bolay.LeetCode.Problems.Tests
             var l2 = BuildListNode(l2Nums);
 
             var instance = new P2AddTwoNumbers();
-            var resultListNode = instance.AddTwoNumbers(l1, l2);
+            var resultListNode = instance.AddTwoNumbers(l1!, l2!);
 
             var result = ReadListNode(resultListNode);
 

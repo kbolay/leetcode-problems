@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Bolay.LeetCode.Problems\Bolay.LeetCode.Problems.csproj" />
+    <ProjectReference Include="..\LeetCode.Problems\LeetCode.Problems.csproj" />
   </ItemGroup>
 
 </Project>

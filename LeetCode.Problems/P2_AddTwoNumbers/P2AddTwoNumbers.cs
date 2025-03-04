@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Bolay.LeetCode.Problems
+namespace LeetCode.Problems.P2_AddTwoNumbers
 {
     public class ListNode 
     {
         public int val;
-        public ListNode next;
+        public ListNode? next;
 
-        public ListNode(int val = 0, ListNode next = null)
+        public ListNode(int val = 0, ListNode? next = null)
         {
             this.val = val;
             this.next = next;
@@ -26,8 +26,8 @@ namespace Bolay.LeetCode.Problems
         public ListNode AddListNodes(ListNode l1, ListNode l2, int carryValue = 0)
         {
             int nodeValue = carryValue;
-            ListNode l1Next = null;
-            ListNode l2Next = null;
+            ListNode? l1Next = null;
+            ListNode? l2Next = null;
             int nextCarryValue = 0;
 
             if(l1 != null) 
@@ -48,10 +48,10 @@ namespace Bolay.LeetCode.Problems
                 nodeValue = nodeValue % 10;
             }
 
-            ListNode next = null;
+            ListNode? next = null;
             if(l1Next != null || l2Next != null || nextCarryValue > 0)
             {
-                next = AddListNodes(l1Next, l2Next, nextCarryValue);
+                next = AddListNodes(l1Next!, l2Next!, nextCarryValue);
             }
 
             return new ListNode(nodeValue, next);

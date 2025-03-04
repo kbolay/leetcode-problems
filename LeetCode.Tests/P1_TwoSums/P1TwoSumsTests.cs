@@ -1,4 +1,7 @@
-namespace Bolay.LeetCode.Problems.Tests;
+using LeetCode.Problems.P1_TwoSums;
+using Xunit;
+
+namespace LeetCode.Tests.P1_TwoSums;
 
 public class P1TwoSumsTests
 {
