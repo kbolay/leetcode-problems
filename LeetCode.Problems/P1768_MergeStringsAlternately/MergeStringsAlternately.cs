@@ -89,4 +89,29 @@ public static class MergeStringsAlternately
 
         return result.ToString();
     } // end method
+
+    public static string WithSpansAndWhileLoop(ReadOnlySpan<char> word1, ReadOnlySpan<char> word2)
+    {
+        Span<char> result = stackalloc char[word1.Length + word2.Length];
+
+        int firstIndex = 0;
+        int secondIndex = 0;
+        while(firstIndex < word1.Length || secondIndex < word2.Length)
+        {
+            if(firstIndex < word1.Length) 
+            {
+                result[firstIndex + secondIndex] = word1[firstIndex];
+                firstIndex++;
+            }
+
+            if(secondIndex < word2.Length)
+            {
+                result[firstIndex + secondIndex] = word2[secondIndex];
+                secondIndex++;
+            }
+        }
+
+        return result.ToString();
+    } // end method
+
 } // end class

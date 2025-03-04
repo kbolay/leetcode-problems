@@ -33,4 +33,14 @@ public class UnitTests
         var result = MergeStringsAlternately.WithSpans(word1, word2);
         Assert.Equal(expected, result);
     }
+
+    [Theory]
+    [InlineData("abc", "def", "adbecf")]
+    [InlineData("abc", "de", "adbec")]
+    [InlineData("abc", "defghi", "adbecfghi")]
+    public void TestSpansAndWhileLoop(string word1, string word2, string expected)
+    {
+        var result = MergeStringsAlternately.WithSpansAndWhileLoop(word1, word2);
+        Assert.Equal(expected, result);
+    }
 }

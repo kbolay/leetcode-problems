@@ -61,5 +61,11 @@ namespace LeetCode.Problems.P1768_MergeStringsAlternately
         {
             MergeStringsAlternately.WithSpans(_word1, _word2);
         }
+
+        [Benchmark]
+        public void WithSpansAndWhileLoop()
+        {
+            MergeStringsAlternately.WithSpansAndWhileLoop(_word1, _word2);
+        }
     }
 }
