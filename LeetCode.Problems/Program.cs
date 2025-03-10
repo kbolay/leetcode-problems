@@ -17,7 +17,8 @@ namespace LeetCode.Problems
             //var summary = BenchmarkRunner.Run<P151_ReverseWords.Benchmarks>();
             // var summary = BenchmarkRunner.Run<P238_ProductOfArrayExceptSelf.Benchmarks>();
             // var summary = BenchmarkRunner.Run<P392_IsSubsequence.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P11_ContainerWithMostWater.Benchmarks>();
+            //var summary = BenchmarkRunner.Run<P11_ContainerWithMostWater.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P1456_MaxVowelsInWindow.Benchmarks>();
         }
     }
 }

@@ -38,9 +38,9 @@ s consists of lowercase English letters.
 
 public class MaxVowelsInSubstring
 {
+    private static HashSet<char> _vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
     public static int Original(string s, int k)
     {
-        var vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
         var result = 0;
         var runningCount = 0;
         var vowelFlagArray = new BitArray(k);
@@ -49,7 +49,7 @@ public class MaxVowelsInSubstring
         //aeiou, 2
         for(int i = 0; i < s.Length; i++)
         {
-            if(vowels.Contains(s[i]))
+            if(_vowels.Contains(s[i]))
             {
                 vowelFlagArray[lastVowelFlagArrayIndex] = true;
                 runningCount++;
@@ -71,6 +71,37 @@ public class MaxVowelsInSubstring
                 // 001 -> 010
                 vowelFlagArray = vowelFlagArray.RightShift(1);
             }            
+        }
+
+        return result;
+    } // end method
+
+
+    /// <summary>
+    /// This is a solution found in the leetcode solutions sections that I wanted to try out and benchmark against my original solution.
+    /// </summary>
+    /// <param name="s"></param>
+    /// <param name="k"></param>
+    /// <returns></returns>
+    public static int MultipleContains(string s, int k)
+    {
+        // get the first window
+        var runningCount = s.Take(k).Count(x => _vowels.Contains(x));
+        var result = runningCount;
+
+        for(int i = k; i < s.Length; i++)
+        {
+            if(_vowels.Contains(s[i-k]))
+            {
+                runningCount--;
+            }
+
+            if(_vowels.Contains(s[i]))
+            {
+                runningCount++;
+            }
+
+            result = Math.Max(result, runningCount);
         }
 
         return result;
