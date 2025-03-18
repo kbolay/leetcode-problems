@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
+using LeetCode.Problems.P1004_MaxConsecutiveOnes;
 
 namespace LeetCode.Problems
 {
@@ -18,7 +19,8 @@ namespace LeetCode.Problems
             // var summary = BenchmarkRunner.Run<P238_ProductOfArrayExceptSelf.Benchmarks>();
             // var summary = BenchmarkRunner.Run<P392_IsSubsequence.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P11_ContainerWithMostWater.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P1456_MaxVowelsInWindow.Benchmarks>();
+            //var summary = BenchmarkRunner.Run<P1456_MaxVowelsInWindow.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P1004_MaxConsecutiveOnes.Benchmarks>();
         }
     }
 }
