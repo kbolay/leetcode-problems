@@ -20,7 +20,8 @@ namespace LeetCode.Problems
             // var summary = BenchmarkRunner.Run<P392_IsSubsequence.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P11_ContainerWithMostWater.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P1456_MaxVowelsInWindow.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P1004_MaxConsecutiveOnes.Benchmarks>();
+            //var summary = BenchmarkRunner.Run<P1004_MaxConsecutiveOnes.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P1207_UniqueNumberOfOccurrences.Benchmarks>();
         }
     }
 }
