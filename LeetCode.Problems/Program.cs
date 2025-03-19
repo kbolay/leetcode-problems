@@ -21,7 +21,8 @@ namespace LeetCode.Problems
             //var summary = BenchmarkRunner.Run<P11_ContainerWithMostWater.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P1456_MaxVowelsInWindow.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P1004_MaxConsecutiveOnes.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P1207_UniqueNumberOfOccurrences.Benchmarks>();
+            //var summary = BenchmarkRunner.Run<P1207_UniqueNumberOfOccurrences.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P2352_EqualRowColumnPairs.Benchmarks>();
         }
     }
 }
