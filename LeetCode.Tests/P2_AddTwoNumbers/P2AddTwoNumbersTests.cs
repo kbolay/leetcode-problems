@@ -1,5 +1,6 @@
 using Xunit;
 using LeetCode.Problems.P2_AddTwoNumbers;
+using LeetCode.Problems.Shared;
 
 namespace LeetCode.Tests.P2_AddTwoNumbers
 {

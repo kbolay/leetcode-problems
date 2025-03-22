@@ -23,7 +23,8 @@ namespace LeetCode.Problems
             //var summary = BenchmarkRunner.Run<P1004_MaxConsecutiveOnes.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P1207_UniqueNumberOfOccurrences.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P2352_EqualRowColumnPairs.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P2390_RemovingStarsFromString.Benchmarks>();
+            //var summary = BenchmarkRunner.Run<P2390_RemovingStarsFromString.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P735_AsteroidCollision.Benchmarks>();
         }
     }
 }
