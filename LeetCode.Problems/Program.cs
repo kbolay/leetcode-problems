@@ -26,7 +26,8 @@ namespace LeetCode.Problems
             //var summary = BenchmarkRunner.Run<P2390_RemovingStarsFromString.Benchmarks>();
             // var summary = BenchmarkRunner.Run<P735_AsteroidCollision.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P104_MaximumDepthBinaryTree.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P437_PathSum3.Benchmarks>();
+            //var summary = BenchmarkRunner.Run<P437_PathSum3.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P841_CanVisitAllRooms.Benchmarks>();
         }
     }
 }
