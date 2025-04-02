@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
-using LeetCode.Problems.P1004_MaxConsecutiveOnes;
 
 namespace LeetCode.Problems
 {
@@ -28,7 +23,8 @@ namespace LeetCode.Problems
             //var summary = BenchmarkRunner.Run<P104_MaximumDepthBinaryTree.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P437_PathSum3.Benchmarks>();
             //var summary = BenchmarkRunner.Run<P841_CanVisitAllRooms.Benchmarks>();
-            var summary = BenchmarkRunner.Run<P547_NumberOfProvinces.Benchmarks>();
+            // var summary = BenchmarkRunner.Run<P547_NumberOfProvinces.Benchmarks>();
+            var summary = BenchmarkRunner.Run<P1466_ReorderRoutes.Benchmarks>();
         }
     }
 }
